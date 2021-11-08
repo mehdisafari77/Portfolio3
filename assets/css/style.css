@@ -12,11 +12,11 @@ body {
     padding-top: 20px;
   }
   .sidenav {
-    font-size: 18px;
+    font-size: 15px;
     font-family: 'Merriweather', serif;
     display: flex;
     height: 100%;
-    width: 350px;
+    width: 250px;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -57,8 +57,10 @@ body {
     border-radius: 80%;
 }
   .main {
-    margin-left: 350px; /* Same as the width of the sidenav */
-    font-size: 28px; /* Increased text to enable scrolling */
+    color: #fff;
+    background: linear-gradient(rgb(183, 212, 240), rgb(239, 241, 114));
+    margin-left: 250px; /* Same as the width of the sidenav */
+    font-size: 25px; /* Increased text to enable scrolling */
     padding: 0px 10px;
   }
 
