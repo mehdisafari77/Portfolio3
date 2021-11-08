@@ -77,15 +77,15 @@ body {
     flex-wrap: nowrap;
 }
 
-  .skills {
+.skills {
     font-size: 14px;
-    font-family: 'Merriweather', serif;  
+    font-family: 'Merriweather', serif;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    align-content: flex-start;
-    justify-content: flex-start;
-    align-items: flex-start;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
 }
 
 #resume {
