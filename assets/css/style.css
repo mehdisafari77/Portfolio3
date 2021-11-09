@@ -129,6 +129,14 @@ body {
     background: #050505;
     color: #fff;
 }
+
+.custom-detail {
+  font-size: 12px;
+  background-color: rgb(177, 236, 177);
+  opacity: 0.8;
+  border-radius: 50%;
+  width: 200px;
+}
   
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
