@@ -16,7 +16,7 @@ body {
     font-family: 'Merriweather', serif;
     display: flex;
     height: 100%;
-    width: 250px;
+    width: 170px;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -40,7 +40,7 @@ body {
   .sidenav a {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 15px;
     color: #818181;
     display: block;
   }
@@ -51,21 +51,17 @@ body {
   .sidenav img {
     align-items: center;
     align-content: center;
-    height: 200px;
-    width: 200px;
+    height: 100px;
+    width: 100px;
     object-fit: cover;
     border-radius: 80%;
 }
   .main {
     color: #fff;
     background: linear-gradient(rgb(183, 212, 240), rgb(239, 241, 114));
-    margin-left: 250px; /* Same as the width of the sidenav */
+    margin-left: 170px; /* Same as the width of the sidenav */
     font-size: 25px; /* Increased text to enable scrolling */
     padding: 0px 10px;
-  }
-
-  .about {
-
   }
 
   .projects {
@@ -77,6 +73,11 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
+}
+
+.about {
+  font-family: 'Merriweather', serif;  
+  font-size: 15px;
 }
 
 .skills {
@@ -96,13 +97,23 @@ body {
 }
 
 .skill-cards {
-    display: flex;
-    margin: 10px;
+  display: flex;
+  margin: 10px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  
 }
-
+.sidenav p {
+  padding-left: 20px;
+  font-size: 15px;
+}
 .social {
     padding-top: 16px;
     display: flex;
+    flex-direction: column;
 }
 .fa {
     padding: 20px;
@@ -137,8 +148,46 @@ body {
   border-radius: 50%;
   width: 200px;
 }
-  
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
+
+  @media (max-width: 450px) {
+    .card-title {
+      font-size: 14px;
+    }
+    .card-text {
+      font-size: 12px;
+    }
+    .about p{
+      font-size: 14px;
+    }
+    h2 {
+      font-size: 20px !important
+    }
+
+    .sidenav {
+      padding-top: 15px;
+      font-size: 13px;
+      width: 100px;
+    }
+    .sidenav a {
+      font-size: 13px;
+    }
+    .sidenav img {
+      align-items: center;
+      align-content: center;
+      height: 100px;
+      width: 100px;
+      object-fit: cover;
+      border-radius: 80%;
+    }
+    .sidenav p {
+      padding-left: 20px;
+      font-size: 12px;
+    }
+  .main {
+    color: #fff;
+    background: linear-gradient(rgb(183, 212, 240), rgb(239, 241, 114));
+    margin-left: 100px; /* Same as the width of the sidenav */
+    font-size: 15px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+    }
   }
